@@ -1,70 +1,126 @@
-# Getting Started with Create React App
+<table>
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 84%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"><img src="./media/image1.png"
+style="width:1in;height:0.97917in" /></th>
+<th style="text-align: center;"><p><strong>ТЕХНИЧЕСКИ УНИВЕРСИТЕТ –
+СОФИЯ</strong></p>
+<p><strong>ФАКУЛТЕТ КОМПЮТЪРНИ СИСТЕМИ И ТЕХНОЛОГИИ</strong></p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**КУРСОВ ПРОЕКТ**
 
-## Available Scripts
+1.  **Overview**
 
-In the project directory, you can run:
+> "My Todos" е уеб приложение за управление на задачи с възможности за
+> филтриране, изтриване, сортиране и маркиране на задачите като
+> завършени или несвършени. Може да филтрирате по потребител, текст и
+> дата.
 
-### `npm start`
+<img src="./media/image2.png" style="width:4.08982in;height:4.35277in"
+alt="A screenshot of a computer AI-generated content may be incorrect." />
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+> В началото сте в Todo частта на приложението. Тук можете да видите
+> всички задачи, които не са направени. Те могат да се филтрират по
+> userID и текст (asc / desc). На всяка задача в дясно са добавени и два
+> бутона. Кошчето е за изтриване на задачата, когато тя вече не е
+> релевантна или е имало объркване при задаването ѝ. Другият бутон е
+> тикчето, което премества задачата в частта „Complete“, където се
+> намират завършените задачи.
+>
+> <img src="./media/image3.png" style="width:4.06in;height:3.69in"
+> alt="A screenshot of a computer AI-generated content may be incorrect." />
+>
+> След натискане на бутона „Complete“ излиза списък с всички завършени
+> задачи. Те, както преди, могат да се сортират по UserID и текст, но
+> този път може да се сортират и по дата, в която са завършени, в реда
+> „asc“ или „desc“. В самия списък има пак два бутона. Кошчето отново
+> изтрива задачата изцяло. Бутонът е направен с опция, ако потребителите
+> не искат да пазят история на повече от например 6 месеца, те имат
+> възможност да я изтрият. Другият бутон, стрелката, премества задачата
+> от „завършена“ в „несвършена“, ако случайно тя е била преместена в
+> завършените по погрешка.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2.  **Prerequisites**
 
-### `npm test`
+Преди да стартирате проекта, уверете се, че имате инсталирани:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Visual studio code (можете да го инсталирате от
+  [ТУК](https://code.visualstudio.com/download))
 
-### `npm run build`
+- Node.js (можете да го инсталирате от
+  [ТУК](https://nodejs.org/en/download))
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+> След като сте инсталирали Node.js и Visual studio code отворете
+> Command prompt(CMD) и проверете дали Node.js е инсталиран правилно с
+> командите:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- node -v
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- npm -v
 
-### `npm run eject`
+Ако и на двете покаже версийте сте готови prerequisites. Ако не може да
+има проблем с path за да разрешите този проблем. Отворете Edit
+environment variables
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<img src="./media/image4.png" style="width:3.86846in;height:1.02424in"
+alt="A blue background with white text AI-generated content may be incorrect." />
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+След това изберете Еnvironment Variables доло дясно.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<img src="./media/image5.png" style="width:4.17922in;height:3.74589in"
+alt="A screenshot of a computer program AI-generated content may be incorrect." />
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+След това в долната част при system variables изберете Path и цъкнете
+Edit
 
-## Learn More
+<img src="./media/image6.png" style="width:4.13807in;height:4.17775in"
+alt="A screenshot of a computer AI-generated content may be incorrect." />
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+След това трябва да проверим дали има path към node.js и ако няма да го
+добавим с new и слагаме path в края трябва да се вижда.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<img src="./media/image7.png" style="width:5.14267in;height:5.63953in"
+alt="A screenshot of a computer program AI-generated content may be incorrect." />
 
-### Code Splitting
+3.  **Steps to install dependencies**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Командите се поставят в терминала.
 
-### Analyzing the Bundle Size
+Клонирайте проекта:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- git clone https://github.com/barlibg/todolist.git
 
-### Making a Progressive Web App
+Инсталирайте необходимите библиотеки:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- npm install
 
-### Advanced Configuration
+<!-- -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- npm i react-icons –save
 
-### Deployment
+> При проблем с някоя команда може да сте забранили стартирането на
+> скриптова с тази команда временно ще можете да ги стартирате:
+>
+> Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+4.  **Instructions on how to run the app locally**
 
-### `npm run build` fails to minify
+Командите се поставят в терминала.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+За да стартираме приложението локално:
+
+- npm start (ако има проблем пробвайте npm start 3001)
+
+> При проблем с някоя команда може да сте забранили стартирането на
+> скриптова с тази команда временно ще можете да ги стартирате:
+>
+> Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
